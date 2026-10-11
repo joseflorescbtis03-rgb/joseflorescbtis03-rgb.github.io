@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #F7F8FA;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+    background-color: #FFFFFF;
+    color: #263238;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E1E5EA;
+}
+
+.datos p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #687783;
+    letter-spacing: 1px;
+}
+
+.datos h3 {
+    margin: 8px 0;
+    font-size: 23px;
+    color: #172B4D;
+}
+
+.numero {
+    color: #087F8C;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.portada {
+    min-height: 480px;
+    padding: 85px 12%;
+    background: linear-gradient(135deg, #172B4D, #087F8C);
+    color: #FFFFFF;
+    text-align: left;
+    border-radius: 0 0 65px 0;
+}
+
+.subtitulo {
+    color: #70E1D1;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.portada h1 {
+    font-size: 66px;
+    line-height: 1.1;
+    margin: 25px 0;
+    color: #FFFFFF;
+}
+
+.linea {
+    width: 90px;
+    height: 5px;
+    background-color: #70E1D1;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+.descripcion {
+    max-width: 650px;
+    margin: 0 0 30px;
+    font-size: 19px;
+    line-height: 1.8;
+    color: #E1F4F4;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #70E1D1;
+    color: #172B4D;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #70E1D1;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.contenedor {
+    width: 86%;
+    max-width: 1200px;
+    margin: 65px auto;
+}
+
+.seccion {
+    background-color: #FFFFFF;
+    margin-bottom: 40px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    border: 1px solid #E5EAF0;
+    box-shadow: 0 8px 25px rgba(23, 43, 77, 0.06);
+    overflow: auto;
+}
+
+.etiqueta {
+    color: #087F8C;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+}
+
+.seccion h2 {
+    color: #172B4D;
+    font-size: 32px;
+    margin: 0 0 25px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #E8F3F3;
+}
+
+.seccion h3 {
+    color: #087F8C;
+    font-size: 21px;
+}
+
+.seccion p {
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+    color: #52616B;
+}
+
+.imagen {
+    width: 290px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: none;
+}
+
+.izquierda {
+    float: left;
+    margin: 5px 28px 18px 0;
+}
+
+.derecha {
+    float: right;
+    margin: 5px 0 18px 28px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    flex: 1 1 200px;
+    padding: 25px;
+    background-color: #F2F8F9;
+    border-radius: 12px;
+    border: 1px solid #DFEEEE;
+    border-bottom: 4px solid #087F8C;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(23, 43, 77, 0.10);
+}
+
+.tarjeta span {
+    color: #087F8C;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.acontecimiento {
+    margin: 25px 0;
+    padding: 20px 25px;
+    border-left: 5px solid #087F8C;
+    background-color: #F2F8F9;
+    border-radius: 0 12px 12px 0;
+}
+
+.acontecimiento h3 {
+    margin-bottom: 8px;
+}
+
+.acontecimiento p {
+    margin-top: 5px;
+}
+
+.imagen-grande {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: 330px;
+    object-fit: cover;
+    margin: 30px auto;
+    border-radius: 16px;
+    border: none;
+}
+
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.personaje {
+    flex: 1 1 220px;
+    padding: 25px;
+    background-color: #F7F8FA;
+    border: 1px solid #E1E5EA;
+    border-radius: 12px;
+    border-top: 4px solid #087F8C;
+}
+
+.personaje h3 {
+    margin-top: 0;
+}
+
+.personaje p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.linea-tiempo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.evento {
+    flex: 1 1 150px;
+    padding: 22px;
+    background-color: #F2F8F9;
+    border-radius: 12px;
+    border-top: 4px solid #087F8C;
+    border-bottom: none;
+}
+
+.evento h3 {
+    font-size: 23px;
+    margin-top: 0;
+    color: #172B4D;
+}
+
+.evento p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.conclusion {
+    background: linear-gradient(135deg, #172B4D, #087F8C);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+}
+
+.conclusion h2 {
+    color: #FFFFFF;
+    border-color: #70E1D1;
+}
+
+.conclusion .etiqueta {
+    color: #70E1D1;
+}
+
+.conclusion p {
+    font-size: 18px;
+    color: #E1F4F4;
+}
+
+.fuentes {
+    padding-left: 25px;
+}
+
+.fuentes li {
+    margin-bottom: 18px;
+    padding-left: 8px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #52616B;
+}
+
+.fuentes a {
+    color: #087F8C;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.fuentes a:hover {
+    color: #172B4D;
+    text-decoration: underline;
+}
+
+.nota {
+    color: #7B8790;
+    font-size: 14px !important;
+}
+
+footer {
+    background-color: #172B4D;
+    color: #FFFFFF;
+    padding: 35px 20px;
+    text-align: center;
+    border-top: 5px solid #70E1D1;
+}
+
+footer h3 {
+    color: #70E1D1;
+    letter-spacing: 3px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #DCE5ED;
+}
+
+@media (max-width: 700px) {
+    .encabezado {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .portada {
+        padding: 60px 25px;
+        min-height: auto;
+        border-radius: 0 0 35px 0;
+    }
+
+    .portada h1 {
+        font-size: 43px;
+    }
+
+    .subtitulo {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .descripcion {
+        font-size: 16px;
+    }
+
+    .contenedor {
+        width: 92%;
+        margin: 35px auto;
+    }
+
+    .seccion {
+        padding: 25px 22px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+    }
+
+    .seccion h2 {
+        font-size: 25px;
+    }
+
+    .seccion h3 {
+        font-size: 19px;
+    }
+
+    .seccion p {
+        font-size: 16px;
+    }
+
+    .imagen {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        max-height: 280px;
+        margin: 20px auto;
+    }
+
+    .imagen-grande {
+        height: auto;
+        max-height: 280px;
+    }
+
+    .numero {
+        font-size: 18px;
+    }
+
+    .tarjetas,
+    .personajes,
+    .linea-tiempo {
+        gap: 15px;
+    }
+
+    .tarjeta,
+    .personaje,
+    .evento {
+        flex-basis: 100%;
+    }
+
+    .conclusion p {
+        font-size: 16px;
+    }
+}
